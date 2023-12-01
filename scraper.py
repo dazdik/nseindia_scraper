@@ -27,7 +27,7 @@ with webdriver.Chrome(options=chrome_options) as driver:
     actions = ActionChains(driver)
 
     # прокрутка страницы для имитации действий пользователя
-    for i in range(10):
+    for _ in range(10):
         driver.execute_script("window.scrollBy(0,200)")
         time.sleep(2)
 
